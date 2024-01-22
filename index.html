@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multiple-choice questions</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Multiple-choice questions</h1>
+
+    <label for="max-questions">Number of displayed questions:</label>
+        <input type="number" id="max-questions" value="10">
+    <br>
+    
+    <label for="question-type">Select question type to display:</label>
+    <select id="question-type" class="type-select">
+        <option value="All">All types</option>
+        <option value="Setting">Setting</option>
+        <option value="Character Info">Character Info</option>
+        <option value="Emotions/Traits">Emotions/Traits</option>
+        <option value="Story">Story</option>
+        <option value="Genre/Tone">Genre/Tone</option>
+        <option value="Storytelling/Humor">Storytelling/Humor</option>
+        <option value="Theme">Theme</option>
+    </select>
+    <br>
+
+    <label>Select models to display:</label>
+        <input type="checkbox" id="show-nosubs-novid" checked> nosubs_novid_pred
+        <input type="checkbox" id="show-subs-novid" checked> subs_novid_pred
+        <input type="checkbox" id="show-nosubs-vid10" checked> nosubs_vid10_pred
+        <input type="checkbox" id="show-subs-vid10" checked> subs_vid10_pred
+    <br>
+
+    <button id="update-button">Update</button>
+
+    <div id="quiz-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

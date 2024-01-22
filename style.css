@@ -1,0 +1,37 @@
+#quiz-container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+#quiz-container div {
+    margin-bottom: 15px;
+}
+
+#quiz-container p {
+    font-weight: bold;
+}
+
+#quiz-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+#quiz-container th, #quiz-container td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#quiz-container th {
+    background-color: #f2f2f2;
+}
+
+.green {
+    background-color: rgba(0, 128, 0, 0.5); /* Green with 50% opacity */
+}
+
+.red {
+    background-color: rgba(255, 0, 0, 0.5); /* Red with 50% opacity */
+}
