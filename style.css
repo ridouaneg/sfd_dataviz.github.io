@@ -1,30 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header, footer {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.section {
+    margin: 20px;
+    padding: 20px;
+}
+
+.dataset-sample, .other-dataset-sample {
+    margin-bottom: 20px;
+}
+
 #quiz-container {
     width: 80%;
     margin: 20px auto;
     padding: 20px;
 }
 
-#quiz-container div {
+#tableContainer {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+div {
     margin-bottom: 15px;
 }
 
-#quiz-container p {
+p {
     font-weight: bold;
 }
 
-#quiz-container table {
+table {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 20px;
 }
 
-#quiz-container th, #quiz-container td {
+th, td {
     border: 1px solid #ddd;
     padding: 8px;
     text-align: left;
 }
 
-#quiz-container th {
+th {
     background-color: #f2f2f2;
 }
 
@@ -34,4 +74,13 @@
 
 .red {
     background-color: rgba(255, 0, 0, 0.5); /* Red with 50% opacity */
+}
+
+.question {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.correct {
+    background-color: rgba(0, 128, 0, 0.5); /* Green with 50% opacity */
 }

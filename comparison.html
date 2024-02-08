@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparison with other video datasets</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Short Film Dataset (SFD)</h1>
+        <h2>Comparison with other video datasets</h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="samples.html">Samples</a></li>
+            <li><a href="benchmarks.html">Benchmark results</a></li>
+            <li><a href="comparison.html">Comparison with other video datasets</a></li>
+        </ul>
+    </nav>
+    <section id="comparison">
+        <form id="datasetForm">
+            <label><input type="checkbox" name="dataset" value="iVQA.json">iVQA</label>
+            <label><input type="checkbox" name="dataset" value="NextQA.json">NextQA</label>
+            <label><input type="checkbox" name="dataset" value="EgoSchema.json">EgoSchema</label>
+            <label><input type="checkbox" name="dataset" value="LSMDC16.json">LSMDC16</label>
+            <label><input type="checkbox" name="dataset" value="TVQA.json">TVQA</label>
+            <label><input type="checkbox" name="dataset" value="MovieQA.json">MovieQA</label>
+            <label><input type="checkbox" name="dataset" value="SFD.json">SFD</label>
+        </form>
+        <form>
+            <label for="sampleSize">Number of Samples:</label>
+            <input type="number" id="sampleSize" name="sampleSize" min="1" value="5">
+        </form>
+        <form>
+            <button type="button" onclick="updateTable()">Update</button>
+        </form>
+        <div id="tableContainer">
+            <!-- Table will be inserted here -->
+        </div>
+    </section>
+    <footer>
+    </footer>
+    <script src="comparison.js"></script>
+</body>
+</html>
